@@ -5,7 +5,7 @@
 This is an Ansible playbook that executes the installation and basic configuration of LAMP (Linux, Apache, PHP, and MariaDB) stack written for Ubuntu and CentOS.
 
 ## Prerequisites
-* Ansible (installed on control node)
+* Ansible (installed on the control node)
 * SSH (installed on both the control node and remote machine/s)
 * Sudoer account with passwordless `sudo` (setup on remote machine/s, ensure that the remote user for all machines are the same or modify the inventory file to specify the respective remote user for each)
 
