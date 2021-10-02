@@ -1,0 +1,28 @@
+---
+- name: LAMP Stack
+  hosts: lamp
+
+  tasks:
+  - name: Include variables from config.yaml
+    include_vars:
+      file: config.yaml
+
+  - name: Install and configure Apache + PHP on Ubuntu.
+    include_role:
+      name: apache_php_ubuntu
+    when: ansible_distribution == 'Ubuntu'
+
+  - name: Install MariaDB on Ubuntu.
+    include_role:
+      name: mariadb_ubuntu
+    when: ansible_distribution == 'Ubuntu'
+
+  - name: Install and configure HTTPD + PHP on CentOS.
+    include_role:
+      name: httpd_php_centos
+    when: ansible_facts['os_family'] == 'RedHat'
+
+  - name: Install MariaDB on CentOS.
+    include_role:
+      name: mariadb_centos
+    when: ansible_facts['os_family'] == 'RedHat'

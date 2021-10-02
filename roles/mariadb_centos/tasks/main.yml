@@ -1,0 +1,13 @@
+---
+# tasks file for mariadb_centos
+- name: Install MariaDB server using yum.
+  yum:
+    name: mariadb-server
+    state: latest
+    update_cache: yes
+
+- name: Start MariaDB service.
+  service:
+    name: mariadb
+    state: started
+    enabled: yes
