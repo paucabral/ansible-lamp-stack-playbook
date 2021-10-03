@@ -1,8 +1,8 @@
-# Installation and Basic Configuration of LAMP (Linux, Apache, PHP, and MariaDB) stack using Ansible (for Ubuntu and CentOS)
+# Installation and Basic Configuration of LAMP (Linux, Apache, MariaDB, and PHP) stack using Ansible (for Ubuntu and CentOS)
 
 **Author:** Pau Cabral
 
-This is an Ansible playbook that executes the installation and basic configuration of LAMP (Linux, Apache, PHP, and MariaDB) stack written for Ubuntu and CentOS.
+This is an Ansible playbook that executes the installation and basic configuration of LAMP (Linux, Apache, MariaDB, and PHP) stack written for Ubuntu and CentOS.
 
 ## Prerequisites
 * Ansible (installed on the control node)
